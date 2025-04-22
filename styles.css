@@ -1,0 +1,225 @@
+/* General Body and Layout Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Header Styles */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+    padding: 10px 20px;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-container img {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+  nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: #007BFF;
+  }
+  
+  /* Main Section Styles */
+  main {
+    flex-grow: 1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  main img {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Call-to-Action Button Styles */
+  .cta-button {
+    margin-top: 15px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Article Styles */
+  article {
+    flex: 3;
+  }
+
+  /* Aside Styles */
+  aside {
+    flex: 1;
+    background-color: #fafafa;
+    border-left: 3px solid #ddd;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 8px rgba(0,0,0,0.05)
+  }
+  
+  /* Form Styles */
+  form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  label {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  input {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: lightskyblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content;
+  }
+
+  button:hover {
+    background-color: deepskyblue;
+  }
+
+  /* Footer Styles */
+  footer {
+    background-color: #f0f0f0;
+    padding: 15px 20px;
+    text-align: center;
+  }
+  
+  footer .social-buttons a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  footer .facebook {
+    background-color: #3b5998;
+  }
+  
+  footer .twitter {
+    background-color: #1da1f2;
+  }
+  
+  footer .instagram {
+    background-color: #e1306c;
+  }
+  
+  footer p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Charities Page Styles */
+  .charity-card {
+    display: inline-block;
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .charity-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .charity-card h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+  }
+  
+  .charity-card p {
+    font-size: 1em;
+    margin: 10px 0;
+  }
+  
+  .charity-card a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+  }
+  
+  .charity-card a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Search Bar Styles */
+  .search-bar input {
+    padding: 10px;
+    font-size: 1em;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .search-bar input::placeholder {
+    color: #aaa;
+  }
+  
+  /* Responsive Styles for Charity Cards */
+  @media (max-width: 768px) {
+    .charity-card {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .charity-card {
+      width: 100%;
+    }
+  }
+  
+  #extra-details img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    margin-top: 10px;
+  }

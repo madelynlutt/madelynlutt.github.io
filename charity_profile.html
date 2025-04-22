@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HelpHub - Charity Profile</title>
+  <link rel="stylesheet" href="styles.css" />
+
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="firstaid.jpeg" alt="HelpHub Logo">
+      <h1>Charity Profile</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="charities.html">Charities</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Main Content Area -->
+    <article>
+      <h2 id="charity-name">KC Pet Project</h2>
+      <p id="extra-details" style="display: none;">
+        We rescue over 10,000 animals annually and promote adoption, fostering, and public education about pet welfare.
+        <img src="kcpet-project.png" alt="KC Pet Project">
+      </p>
+
+      <h3>Volunteer Now</h3>
+      <button id="volunteer-btn">Volunteer Now</button>
+
+      <!-- Hidden Form (initially not shown) -->
+      <form id="volunteer-form" style="display: none;" aria-label="Volunteer Sign Up Form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="comments">Comments:</label>
+        <input type="text" id="comments" name="comments" />
+
+        <button type="submit">Sign Up</button>
+      </form>
+    </article>
+
+    <!-- Sidebar Area -->
+    <aside>
+      <h4>Why Volunteer?</h4>
+      <p>Volunteering helps you give back to your community, meet new people, and develop valuable skills.</p>
+
+      <h4>Need Help?</h4>
+      <p>Contact us at <a href="mailto:support@helphub.org">support@helphub.org</a></p>
+    </aside>
+  </main>
+
+  <footer>
+    <div class="social-buttons">
+      <a href="#" class="facebook">Facebook</a>
+      <a href="#" class="twitter">Twitter</a>
+      <a href="#" class="instagram">Instagram</a>
+    </div>
+    <p>&copy; 2025 HelpHub. All rights reserved.</p>
+  </footer>
+
+  <script src="charity_profile.js"></script>
+</body>
+</html>
